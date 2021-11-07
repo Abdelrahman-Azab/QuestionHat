@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderBoard">
+    <ImageView
+        android:id="@+id/background_leader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:background="@drawable/background_leader"/>
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/ic_arrow_back_white" />
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:src="@drawable/crown" />
+    <ImageView
+        android:id="@+id/rank1_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tag"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/pic_rank1"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@+id/rank1_pic"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="-25dp"
+        android:layout_toRightOf="@+id/tag"
+        android:src="@drawable/rank1" />
+    <TextView
+        android:id="@+id/name_rank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rank1_pic"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Caleb Johns"
+        android:textSize="@dimen/_25sdp"/>
+
+    <TextView
+        android:id="@+id/only_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_rank1"
+        android:layout_marginLeft="-43dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/name_rank1"
+        android:text="النقاط:"
+        android:textColor="#fff"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/coins_of_rank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_rank1"
+        android:layout_alignStart="@+id/name_rank1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="20,805,389"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#fff"
+        android:layout_alignLeft="@+id/name_rank1" />
+    <!--
+    Rank2
+    -->
+    <ImageView
+        android:id="@+id/rank2_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/background_leader"
+        android:src="@drawable/pic_rank2"
+        android:layout_margin="@dimen/_20sdp" />
+
+    <ImageView
+        android:id="@+id/rank2"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank2_pic"
+        android:layout_alignRight="@+id/rank2_pic"
+        android:layout_alignBottom="@+id/rank2_pic"
+        android:src="@drawable/rank_2"/>
+
+    <TextView
+        android:id="@+id/name_rank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jane Gibson"
+        android:layout_below="@+id/rank2"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15,000 coins"
+        android:layout_below="@+id/name_rank2"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"/>
+    <!--
+Rank 3
+-->
+    <ImageView
+        android:id="@+id/rank3_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/background_leader"
+        android:layout_toRightOf="@+id/rank2_pic"
+        android:src="@drawable/pic_rank3"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <ImageView
+        android:id="@+id/rank3"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank3_pic"
+        android:layout_alignRight="@+id/rank3_pic"
+        android:layout_alignBottom="@+id/rank3_pic"
+        android:src="@drawable/rank_3"/>
+
+    <TextView
+        android:id="@+id/name_rank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jorge Fuller"
+        android:layout_toRightOf="@id/name_rank2"
+        android:layout_below="@+id/rank3"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14,000 coins"
+        android:layout_toRightOf="@id/coins_of_rank2"
+        android:layout_below="@+id/name_rank3"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"/>
+    <!--
+Rank 4
+-->
+    <ImageView
+        android:id="@+id/rank4_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/background_leader"
+        android:layout_toRightOf="@+id/rank3_pic"
+        android:src="@drawable/pic_rank4"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <ImageView
+        android:id="@+id/rank4"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank4_pic"
+        android:layout_alignRight="@+id/rank4_pic"
+        android:layout_alignBottom="@+id/rank4_pic"
+        android:src="@drawable/rank_4"/>
+
+    <TextView
+        android:id="@+id/name_rank4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alta Cortez"
+        android:layout_toRightOf="@id/name_rank3"
+        android:layout_below="@+id/rank3"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13,000 coins"
+        android:layout_toRightOf="@id/coins_of_rank3"
+        android:layout_below="@+id/name_rank4"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"/>
+    <!--
+Rank 5
+-->
+    <ImageView
+        android:id="@+id/rank5_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/coins_of_rank2"
+        android:src="@drawable/pic_rank5"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+    <ImageView
+        android:id="@+id/rank5"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank5_pic"
+        android:layout_alignRight="@+id/rank5_pic"
+        android:layout_alignBottom="@+id/rank5_pic"
+        android:src="@drawable/rank_5"/>
+
+    <TextView
+        android:id="@+id/name_rank5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam Waters"
+        android:layout_below="@+id/rank5"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12,000 coins"
+        android:layout_below="@+id/name_rank5"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"/>
+    <!--
+Rank 6
+-->
+    <ImageView
+        android:id="@+id/rank6_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/coins_of_rank3"
+        android:layout_toRightOf="@+id/rank5_pic"
+        android:src="@drawable/pic_rank6"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+    <ImageView
+        android:id="@+id/rank6"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank6_pic"
+        android:layout_alignRight="@+id/rank6_pic"
+        android:layout_alignBottom="@+id/rank6_pic"
+        android:src="@drawable/rank_6"/>
+
+    <TextView
+        android:id="@+id/name_rank6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roger Sims"
+        android:layout_below="@+id/rank6"
+        android:layout_toRightOf="@+id/name_rank5"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11,000 coins"
+        android:layout_toRightOf="@id/coins_of_rank5"
+        android:layout_below="@+id/name_rank6"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textSize="@dimen/_15sdp"/>
+    <!--
+Rank 7
+-->
+    <ImageView
+        android:id="@+id/rank7_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/coins_of_rank4"
+        android:layout_toRightOf="@+id/rank6_pic"
+        android:src="@drawable/pic_rank7"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_35sdp" />
+
+    <ImageView
+        android:id="@+id/rank7"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignEnd="@+id/rank7_pic"
+        android:layout_alignRight="@+id/rank7_pic"
+        android:layout_alignBottom="@+id/rank7_pic"
+        android:src="@drawable/rank_7"/>
+
+    <TextView
+        android:id="@+id/name_rank7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scott Lloyd"
+        android:layout_toRightOf="@id/name_rank6"
+        android:layout_below="@+id/rank6"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/coins_of_rank7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10,000 coins"
+        android:layout_toRightOf="@id/coins_of_rank6"
+        android:layout_below="@+id/name_rank7"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"/>
+</RelativeLayout>

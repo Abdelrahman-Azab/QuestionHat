@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/sign_in_background">
+
+    <ImageView
+        android:id="@+id/logo_question_hat"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/question_hat_logo"
+        tools:ignore="ContentDescription" />
+<TextView
+    android:id="@+id/text_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/username"
+    android:layout_below="@+id/logo_question_hat"
+    android:layout_marginTop="@dimen/_50sdp"
+    android:layout_marginLeft="@dimen/_25sdp"
+    android:layout_marginStart="@dimen/_25sdp"
+    android:textSize="@dimen/_18sdp"/>
+<EditText
+    android:id="@+id/username_edit_text"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_below="@+id/text_username"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_25sdp"
+    android:layout_marginStart="@dimen/_25sdp"
+    android:hint="@string/enterusername"
+    android:inputType="textPersonName"
+    tools:ignore="Autofill,TextFields"
+    />
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_below="@+id/username_edit_text"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:textSize="@dimen/_18sdp"
+        />
+    <!--
+    input type password bay8r font
+    -->
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/text_password"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:hint="@string/enterpassword"
+        tools:ignore="Autofill,TextFields" />
+  <TextView
+      android:id="@+id/forget_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/forgetpassword"
+      android:layout_below="@+id/password_edit_text"
+      android:layout_marginLeft="@dimen/_200sdp"
+      android:layout_marginStart="@dimen/_200sdp"
+      android:layout_marginTop="@dimen/_15sdp"/>
+    <View
+        android:id="@+id/hori_line"
+        android:layout_width="@dimen/_92sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/forget_text"
+        android:layout_alignStart="@+id/forget_text"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignLeft="@+id/forget_text"/>
+    <TextView
+        android:id="@+id/create_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createaccount"
+        android:layout_below="@+id/forget_text"
+        android:layout_marginLeft="@dimen/_200sdp"
+        android:layout_marginStart="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <View
+        android:id="@+id/hori_line2"
+        android:layout_width="@dimen/_92sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/create_acc"
+        android:layout_alignStart="@+id/create_acc"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignLeft="@+id/create_acc"/>
+
+<ImageView
+    android:id="@+id/countinue_image"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_60sdp"
+    android:src="@drawable/continue_button"
+    android:layout_below="@+id/hori_line"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_40sdp"
+    tools:ignore="ContentDescription" />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/countinue_image"
+        android:gravity="bottom"
+        tools:ignore="UselessLeaf">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/login_with_facebook"/>
+    </LinearLayout>
+-->
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessActivity"
+    android:background="@drawable/backgroundsuccess"
+   >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="75dp">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trackperson" />
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="-39dp"
+        android:layout_marginTop="-53dp"
+        android:layout_toRightOf="@+id/linear"
+        android:src="@drawable/coinsuccess" />
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="-33dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginRight="-47dp"
+        android:layout_toLeftOf="@+id/linear"
+        android:src="@drawable/badge" />
+    <TextView
+        android:id="@+id/congratlations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الف مبروووك"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/how_many_coins_bring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لقد فتحت شارة و كسبت 1000 قطعة نقدية مجانية !+"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/congratlations"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+    <ImageView
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/newquiz"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/how_many_coins_bring"
+        android:layout_marginTop="@dimen/_100sdp"
+        />
+</RelativeLayout>
